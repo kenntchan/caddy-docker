@@ -1,10 +1,10 @@
 #
 # Builder
 #
-FROM abiosoft/caddy:builder as builder
+FROM kenntchan/caddy:builder as builder
 
-ARG version="1.0.3"
-ARG plugins="git,cors,realip,expires,cache,cloudflare"
+ARG version="1.0.4"
+ARG plugins="git,cors,realip,expires,cache,route53"
 ARG enable_telemetry="true"
 
 # process wrapper
@@ -15,10 +15,10 @@ RUN VERSION=${version} PLUGINS=${plugins} ENABLE_TELEMETRY=${enable_telemetry} /
 #
 # Final stage
 #
-FROM alpine:3.10
+FROM alpine:3.11
 LABEL maintainer "Abiola Ibrahim <abiola89@gmail.com>"
 
-ARG version="1.0.3"
+ARG version="1.0.4"
 LABEL caddy_version="$version"
 
 # Let's Encrypt Agreement

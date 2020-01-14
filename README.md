@@ -1,11 +1,11 @@
 # caddy
 
-A [Docker](https://docker.com) image for [Caddy](https://caddyserver.com). This image includes [git](https://caddyserver.com/docs/http.git), [cors](https://caddyserver.com/docs/http.cors), [realip](https://caddyserver.com/docs/http.realip), [expires](https://caddyserver.com/docs/http.expires), [cache](https://caddyserver.com/docs/http.cache) and [cloudflare](https://caddyserver.com/docs/tls.dns.cloudflare) plugins.
+A [Docker](https://docker.com) image for [Caddy](https://caddyserver.com). This image includes [git](https://caddyserver.com/docs/http.git), [cors](https://caddyserver.com/docs/http.cors), [realip](https://caddyserver.com/docs/http.realip), [expires](https://caddyserver.com/docs/http.expires), [cache](https://caddyserver.com/docs/http.cache) and [route53](https://caddyserver.com/v1/docs/tls.dns.route53) plugins.
 
 Plugins can be configured via the [`plugins` build arg](#custom-plugins).
 
 [![](https://images.microbadger.com/badges/image/abiosoft/caddy.svg)](https://microbadger.com/images/abiosoft/caddy "Get your own image badge on microbadger.com")
-[![](https://img.shields.io/badge/version-1.0.3-blue.svg)](https://github.com/caddyserver/caddy/tree/v1.0.3)
+[![](https://img.shields.io/badge/version-1.0.4-blue.svg)](https://github.com/caddyserver/caddy/tree/v1.0.4)
 
 Check [abiosoft/caddy:builder](https://github.com/abiosoft/caddy-docker/blob/master/BUILDER.md) for generating cross-platform Caddy binaries.
 
